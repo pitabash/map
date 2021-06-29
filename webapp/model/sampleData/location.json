@@ -1,0 +1,28 @@
+{
+    "spots": [
+        {
+             "position":"77.1024902;28.7040592;0",
+              "tooltip":"Delhi",
+              "labelType":"Default", 
+              "labelText":"Delhi"
+        },
+        {
+             "position":"94.20;26.00;0",
+              "tooltip":"Odisha",
+              "labelType":"Default", 
+              "labelText":"Odisha"
+        },
+        {
+             "position":"76.25;10.00;0",
+              "tooltip":"Kerala",
+              "labelType":"Default", 
+              "labelText":"Kerala"
+        },
+        {
+             "position":"75.5;30.4;0",
+              "tooltip":"Punjab",
+              "labelType":"Default", 
+              "labelText":"Punjab"
+        }
+    ]
+}

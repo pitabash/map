@@ -1,0 +1,63 @@
+<mvc:View xmlns:vbm="sap.ui.vbm"
+    controllerName="map.googlemap.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+                        <vbm:AnalyticMap id="idMap" width="100%" height="100%"
+                         initialPosition="0;0;0" zoomlevel="" >
+                            <vbm:regions>
+                                <vbm:Region code="IN" color="rgb(255,0,0)" tooltip="India"   ></vbm:Region>
+                            </vbm:regions>
+
+                            <vbm:resources>
+                                <vbm:Resource name="delhi.jfif"
+                                    src="photos/delhi.jfif">
+                                </vbm:Resource>
+                                <vbm:Resource name="kerala.jfif"
+                                    src="photos/kerala.jfif">
+                                </vbm:Resource>
+                                <vbm:Resource name="odisha.jfif"
+                                    src="photos/odisha.jfif">
+                                </vbm:Resource>
+                            </vbm:resources>
+
+                            <vbm:vos>
+                                <vbm:Spots items="{/spots}" >
+
+
+                                    <vbm:items>
+                                        <vbm:Spot id="delhiSpot" position="{position}"
+                                        tooltip="{tooltip}" labelType="{labelType}" labelText="{labelText}"
+                                        labelPos="1" imageSelected="odisha.jfif"  ></vbm:Spot>
+                                    </vbm:items>
+                                </vbm:Spots>
+                            </vbm:vos>
+
+
+
+                            <!-- <vbm:legend>
+                                <vbm:Legend id="legend" caption="Legend">
+                                    <vbm:LegendItem text="Default Label without semantic"
+                                        image="white_label.png" />
+                                    <vbm:LegendItem text="Semantic label: Neutral"
+                                        color="rgb(132,143,148)" />
+                                    <vbm:LegendItem text="Semantic label: Positive"
+                                        color="rgb(97,166,86)" />
+                                    <vbm:LegendItem text="Semantic label: Warning"
+                                        color="rgb(225,123,36)" />
+                                    <vbm:LegendItem text="Semantic label: Error" color="rgb(211,32,48)" />
+                                </vbm:Legend>
+                            </vbm:legend> -->
+                        </vbm:AnalyticMap>
+                    </content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
